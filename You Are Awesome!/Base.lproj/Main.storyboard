@@ -18,7 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x7I-vz-aSx">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x7I-vz-aSx">
                                 <rect key="frame" x="16" y="20" width="288" height="117"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="117" id="l2R-gX-G3J"/>
@@ -27,18 +27,8 @@
                                 <color key="textColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J7I-Yi-5jQ">
-                                <rect key="frame" x="141" y="145" width="163" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="163" id="bsP-EC-vcD"/>
-                                </constraints>
-                                <state key="normal" title="Show Another Message"/>
-                                <connections>
-                                    <action selector="showAnotherMessagePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5xk-lX-36t"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XAv-ul-QOZ">
-                                <rect key="frame" x="16" y="145" width="104" height="30"/>
+                                <rect key="frame" x="108" y="145" width="104" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="104" id="WcH-nT-yps"/>
                                 </constraints>
@@ -51,12 +41,10 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="XAv-ul-QOZ" firstAttribute="top" secondItem="x7I-vz-aSx" secondAttribute="bottom" constant="8" id="Aeg-ra-cGl"/>
-                            <constraint firstItem="J7I-Yi-5jQ" firstAttribute="top" secondItem="x7I-vz-aSx" secondAttribute="bottom" constant="8" id="DNh-yp-GFg"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="x7I-vz-aSx" secondAttribute="trailing" constant="16" id="HJa-6P-Z90"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="J7I-Yi-5jQ" secondAttribute="trailing" constant="16" id="Wno-JR-mao"/>
                             <constraint firstItem="x7I-vz-aSx" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="laq-dJ-XOk"/>
+                            <constraint firstItem="XAv-ul-QOZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qU2-BZ-Jhi"/>
                             <constraint firstItem="x7I-vz-aSx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="tQg-cx-oa4"/>
-                            <constraint firstItem="XAv-ul-QOZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="zoH-mr-JSk"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
